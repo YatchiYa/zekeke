@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html  >
+  <head> 
+</head>
+
+  <body class=" zoom-image--enabled"><!-- DRAWER -->
+    <main role="main" id="main" class="anchor"> 
+    <link href="css/customizer.css" rel="stylesheet" type="text/css" media="all">
+    <div id="zakeke-container"></div>
+    <script src="js/customizer.js"></script> 
+    <script>
+        window.zakekeTranslatedProduct = 0;
+    </script> 
+    <script>
+      var zakekeCustomerId = false;
+      
+
+      if (window.zakekeDesigner) {
+          zakekeDesigner(
+            {"zakekeUrl":"https://portal.zakeke.com/","zakekeApiUrl":"https://api.zakeke.com/api/","shop":"taptagnfc.myshopify.com","priceHide":false,"variantsHide":false,"productAdvancedProcessing":false,"productId":6690093367446,"variantId":null,"design":null,"shared":null,"quantity":1,"properties":{},"locale":"en","customizationStrategy":1,"showFileNames":true,"directDownload":true,"sellingPlan":null,"template":null});
+      } else {
+          let zakekeStartupInterval = setInterval(() =>  {
+                  if (!window.zakekeDesigner) {
+                      return;
+                  }
+                  
+                  zakekeDesigner({"zakekeUrl":"https://portal.zakeke.com/","zakekeApiUrl":"https://api.zakeke.com/api/","shop":"taptagnfc.myshopify.com","priceHide":false,"variantsHide":false,"productAdvancedProcessing":false,"productId":6690093367446,"variantId":null,"design":null,"shared":null,"quantity":1,"properties":{},"locale":"en","customizationStrategy":1,"showFileNames":true,"directDownload":true,"sellingPlan":null,"template":null});
+                  clearInterval(zakekeStartupInterval);
+          }, 300);
+      }
+
+        
+    </script>
+  </main> 
+ 
+  </body>
+</html>

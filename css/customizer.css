@@ -1,0 +1,45 @@
+﻿#zakeke-container {
+    width: 100%;
+}
+ 
+
+#zakeke-frame {
+    width: 100%;
+    border: 0;
+    overflow: hidden;
+    background: url("../images/loading-f13eecdb37.gif") no-repeat center;
+    background-size: 32px;
+}
+
+@media (min-width: 769px) {
+    #zakeke-frame {
+        min-height: 700px;
+        height: 80vh;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        height: -webkit-fill-available;
+    }
+    
+    #zakeke-frame {
+        position: fixed;
+        top: 0 !important;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999999999;
+        background-color: white;
+        min-height: 100%;
+        min-height: -webkit-fill-available;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    #StickyBar, #hubspot-messages-iframe-container, #header, #admin_bar_iframe, .header, .site-header, #swave_stories, #shopify-section-header, #messageus_button, .header_section {
+        display: none !important;
+    }
+}
